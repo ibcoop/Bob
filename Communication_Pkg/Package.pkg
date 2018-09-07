@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.2.10.53 SP?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="Program" Language="IEC">ExternalComm</Object>
+    <Object Type="File">Version.st</Object>
+    <Object Type="Package">LibAsFifo1_ST</Object>
+    <Object Type="Program" Language="IEC">CheckWeigher</Object>
+    <Object Type="Program" Language="IEC">EnergyMonitoring</Object>
+  </Objects>
+</Package>

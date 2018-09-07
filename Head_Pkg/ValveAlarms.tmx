@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">ValveAlarmTexts</prop>
+  </header>
+  <body>
+    <tu tuid="NotClosedInTime">
+      <tuv xml:lang="en">
+        <seg>{&amp;valveErrorName} did not close in time</seg>
+      </tuv>
+    </tu>
+    <tu tuid="NotOpenInTime">
+      <tuv xml:lang="en">
+        <seg>{&amp;valveErrorName} did not open in time</seg>
+      </tuv>
+    </tu>
+    <tu tuid="CommandedOpenAndClosed">
+      <tuv xml:lang="en">
+        <seg>{&amp;valveErrorName} was commanded to be opened and closed at the same time</seg>
+      </tuv>
+    </tu>
+    <tu tuid="IOMissing">
+      <tuv xml:lang="en">
+        <seg>{&amp;valveErrorName} IO Module Missing or Invalid</seg>
+      </tuv>
+    </tu>
+    <tu tuid="NozzleNotClosed">
+      <tuv xml:lang="en">
+        <seg>{&amp;headErrorName} SealPin closed but Nozzle did not</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

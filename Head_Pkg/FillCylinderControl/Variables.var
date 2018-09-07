@@ -1,0 +1,25 @@
+VAR
+	moveTime : REAL;
+    pEndlessPositionData : REFERENCE TO MC_ENDLESS_POSITION;
+END_VAR
+VAR RETAIN
+	endlessPositionData : ARRAY[0..NUMBER_OF_HEADS_M1] OF MC_ENDLESS_POSITION;
+END_VAR
+VAR
+	stateName : STRING[80];
+	old_state : ARRAY[0..NUMBER_OF_HEADS_M1] OF FillPiston_state;
+	logArguments : ARRAY[0..LOGGING_MAX_ARGUMENTS] OF UDINT;
+	currentModule : USINT;
+	currentHead : USINT;
+	pCurrentHead : REFERENCE TO FormingHead_typ;
+	fillPiston : ARRAY[0..NUMBER_OF_HEADS_M1] OF localFillPiston_typ;
+	pFillPiston : REFERENCE TO localFillPiston_typ;
+	pCurrentPiston : REFERENCE TO fillPiston_typ;
+	mpConfig1 : MpAxisBasicConfigType;
+	mpConfig2 : MpAxisBasicConfigType;
+	mpConfig3 : MpAxisBasicConfigType;
+	mpConfig4 : MpAxisBasicConfigType;
+	pMpConfig : REFERENCE TO MpAxisBasicConfigType;
+	fillPistonErrorName : STRING[80];
+	tempString : STRING[3];
+END_VAR

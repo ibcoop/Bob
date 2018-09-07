@@ -1,0 +1,25 @@
+VAR
+	lastWatchDog : BOOL;
+	Test_BOOL : BOOL;
+	externalComm : externalCommunication_typ;
+	Test_INT : INT;
+	Test_REAL : REAL;
+	averageWeight : REAL;
+	rf_trig_power : rf_trig;
+	rf_trig_home : rf_trig;
+	zeroDegree_r_trig : r_trig;
+	watchDog_r_trig : r_trig;
+	r_trig_autoCycleStart : r_trig;
+	sequencerState : Sequencer_enum;
+	WATCHDOG_TIMEOUT : {REDUND_UNREPLICABLE} TIME := T#250ms;
+	WATCHDOG_TOGGLE_TIME : TIME := T#100ms;
+	lastTimeWatchDogChanged : TIME;
+	lastTimeWatchDogSet : TIME;
+	previousTimeZeroDegree : UDINT;
+	currentTimeZeroDegree : UDINT;
+	watchDogAlarmID : UDINT;
+	size : UINT;
+	currentOven : USINT;
+	i : USINT;
+	currentZone : USINT;
+END_VAR

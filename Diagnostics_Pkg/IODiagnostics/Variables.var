@@ -1,0 +1,51 @@
+VAR
+	logErrorOnce : BOOL;
+	AsLoggerFile_0 : AsLoggerFile := (0);
+	AsLoggerServer_0 : AsLoggerServer := (0);
+	MemCheck : MEMxInfo := (0);
+END_VAR
+VAR CONSTANT
+	MAX_IO_SLICE : UINT := 100;
+END_VAR
+VAR
+	StatusIOList : UINT := 0;
+	Step : USINT := 0;
+END_VAR
+VAR CONSTANT
+	MAX_IO_SIZE : USINT := 254;
+END_VAR
+VAR
+	DiagnoseOption : USINT;
+	Elements : UINT;
+	FindResult : INT;
+END_VAR
+VAR CONSTANT
+	INIT : USINT := 0;
+END_VAR
+VAR
+	IOReadIndex : USINT;
+	ModuleDiagnose_1 : ModuleDiagnose;
+	ModuleInformation : ARRAY[0..MAX_IO_SLICE] OF ModuleInformation_typ;
+	mSimulationMode : USINT;
+	NumberOfTotalModules : USINT;
+	pIOData : REFERENCE TO SingleIOEntry_typ;
+	pIOInformation : IODPList_typ;
+	pIODataShortCircuit : REFERENCE TO SingleIOEntry_typ;
+	AlarmInformation : ModuleAlarmInformation_typ;
+	shortCircuitName : STRING[255];
+	short_circuit_check_index : USINT;
+	AsIODPStatus_0 : AsIODPStatus;
+	moduleError : STRING[255];
+	logString : STRING[255];
+	shortCircuitCheckOldData : ARRAY[0..MAX_IO_SIZE] OF BOOL := [255(FALSE)];
+	checkModuleStatusIndex : USINT;
+	OldModuleState : ARRAY[0..MAX_IO_SLICE] OF UINT;
+	batteryStatusIndex : USINT;
+	batteryInputName : STRING[255];
+	AsIODPStatus_2 : AsIODPStatus;
+	OldBatteryState : ARRAY[0..MAX_IO_SLICE] OF BOOL;
+	batteryStatusState : USINT;
+	i : USINT := 0;
+	shortCircuitState : USINT;
+	shortCircuitAlarmID : UDINT;
+END_VAR

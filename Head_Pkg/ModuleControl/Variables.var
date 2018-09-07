@@ -1,0 +1,14 @@
+VAR
+	MpRecipeRegPar_0 : ARRAY[0..NUMBER_OF_HEADS_M1] OF MpRecipeRegPar;
+	MpRecipeRegPar_1 : ARRAY[0..NUMBER_OF_MODULES_M1] OF MpRecipeRegPar;
+	MpRecipeRegPar_2 : ARRAY[0..NUMBER_OF_HEADS_M1] OF MpRecipeRegPar;
+	valveErrorName : STRING[80];
+	pCurrentValve : REFERENCE TO valve_typ;
+	pLocalValve : REFERENCE TO localValve_typ;
+	modules : ARRAY[0..NUMBER_OF_MODULES_M1] OF localModule_typ;
+	currentModule : USINT;
+	logArguments : ARRAY[0..8] OF UDINT;
+	old_state : {REDUND_UNREPLICABLE} ARRAY[0..NUMBER_OF_MODULES_M1] OF PowerSupplyState_enum;
+	currentHead : USINT;
+	pCurrentHead : REFERENCE TO FormingHead_typ;
+END_VAR

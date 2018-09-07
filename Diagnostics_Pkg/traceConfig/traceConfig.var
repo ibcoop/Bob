@@ -1,0 +1,29 @@
+(********************************************************************
+ * COPYRIGHT --  
+ ********************************************************************
+ * Program: traceConfig
+ * File: traceConfig.var
+ * Author: buchananw
+ * Created: January 16, 2014
+ ********************************************************************
+ * Local variables of program traceConfig
+ ********************************************************************)
+VAR
+	NumFiles : UDINT := 0;
+	test : BOOL := FALSE;
+	nwct_state : USINT := 0;
+	MC_BR_NetTrace_0 : MC_BR_NetTrace := (0);
+	FileDelete_0 : FileDelete := (0);
+	DirRead_0 : DirRead := (0);
+	DirInfo_0 : DirInfo := (0);
+	dirData : ARRAY[0..200] OF fiDIR_READ_DATA := [201((0))];
+	dirIndex : USINT := 0;
+	nwctFound : USINT := 0;
+	oldestFound : USINT := 0;
+END_VAR
+VAR CONSTANT
+	MAX_NUMBER_OF_NWCT : USINT := 10;
+END_VAR
+VAR
+	tempFileName : STRING[259];
+END_VAR

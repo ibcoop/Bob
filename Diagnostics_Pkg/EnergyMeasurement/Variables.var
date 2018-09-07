@@ -1,0 +1,11 @@
+VAR
+	currentIndex : UINT;
+	DevLink_0 : DevLink;
+	MpEnergyCore_0 : MpEnergyCore;
+	energyUIConnect : MpEnergyCoreUIConnectType;
+	MpEnergyCoreUI_0 : MpEnergyCoreUI;
+	ConnectToShare_Energy : ConnectToShare;
+	KeepAlive_Energy : KeepAlive;
+	i : USINT;
+	modules : ARRAY[0..NUMBER_OF_MODULES_M1] OF module_typ;
+END_VAR

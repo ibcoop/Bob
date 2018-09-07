@@ -1,0 +1,17 @@
+VAR
+	currentHead : USINT;
+	stretchRod : ARRAY[0..NUMBER_OF_HEADS_M1] OF localStretchRod_typ;
+	currentModule : USINT;
+	old_state : ARRAY[0..NUMBER_OF_HEADS_M1] OF StretchRod_state;
+	stateName : STRING[80];
+	logArguments : ARRAY[0..LOGGING_MAX_ARGUMENTS] OF UDINT;
+	pStretchRod : REFERENCE TO localStretchRod_typ;
+	pCurrentStretchRod : REFERENCE TO stretchRod_typ;
+	mpConfig1 : MpAxisBasicConfigType;
+	mpConfig2 : MpAxisBasicConfigType;
+	mpConfig3 : MpAxisBasicConfigType;
+	mpConfig4 : MpAxisBasicConfigType;
+	pMpConfig : REFERENCE TO MpAxisBasicConfigType;
+	stretchRodErrorName : STRING[80];
+	tempString : STRING[3];
+END_VAR

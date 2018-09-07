@@ -1,0 +1,15 @@
+(********************************************************************
+ * COPYRIGHT -- Bernecker + Rainer
+ ********************************************************************
+ * Program: FifoHandling
+ * File: FifoHandling.var
+ * Author: B&R
+ ********************************************************************
+ * Local variables of program FifoHandling
+ ********************************************************************)
+VAR
+	FifoHandling : FifoHandling_typ := (0);
+END_VAR
+VAR CONSTANT
+	FIFO_MAX_DATA_ENTRIES : UINT := 10;
+END_VAR

@@ -1,0 +1,8 @@
+VAR
+	DevLink_0 : DevLink;
+	mpAuditTrailUIConnect : MpAuditTrailUIConnectType;
+	MpAuditTrailUI_0 : MpAuditTrailUI;
+	MpAuditTrail_0 : MpAuditTrail;
+	ConnectToShare_Audit : ConnectToShare;
+	KeepAlive_Audit : KeepAlive;
+END_VAR

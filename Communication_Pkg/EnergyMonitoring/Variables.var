@@ -1,0 +1,3 @@
+VAR
+	PowerMeter : ARRAY[0..8] OF BeckhoffPowerMeter;
+END_VAR

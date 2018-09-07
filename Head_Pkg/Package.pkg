@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.2.9.65 SP?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="Package">Motion</Object>
+    <Object Type="Program" Language="IEC">ModuleControl</Object>
+    <Object Type="Program" Language="IEC">FillCylinderControl</Object>
+    <Object Type="Program" Language="IEC">StretchRodControl</Object>
+    <Object Type="Program" Language="IEC">ValveControl</Object>
+    <Object Type="File">ValveAlarms.tmx</Object>
+    <Object Type="File">StretchRodAlarmTexts.tmx</Object>
+    <Object Type="File">FillPistonAlarmTexts.tmx</Object>
+    <Object Type="File">ModuleAlarmTexts.tmx</Object>
+  </Objects>
+</Package>
